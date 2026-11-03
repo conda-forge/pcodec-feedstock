@@ -8,12 +8,8 @@ package:
   version: ${{ version }}
 
 source:
-  - url: https://pypi.org/packages/source/p/pcodec/pcodec-${{ version }}.tar.gz
-    sha256: 71d306ff461d7089fcf578649212afc6f78307b2a78d9c44d819a7eddeb3bfd0
-  # the sdist does not ship the license file
-  - url: https://raw.githubusercontent.com/pcodec/pcodec/refs/tags/Python_v${{ version }}/LICENSE
-    sha256: c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
-    file_name: LICENSE
+  url: https://pypi.org/packages/source/p/pcodec/pcodec-${{ version }}.tar.gz
+  sha256: 71d306ff461d7089fcf578649212afc6f78307b2a78d9c44d819a7eddeb3bfd0
 
 build:
   number: 0
