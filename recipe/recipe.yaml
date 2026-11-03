@@ -45,12 +45,12 @@ tests:
   - files:
       source:
         - pco_python/test/
+        - pco/assets/
     requirements:
       run:
         - pytest
     script:
-      # these two tests read pco/assets/, which the sdist does not ship
-      - pytest pco_python/test -v -k "not test_simple_decompress_errors and not test_decompress_without_n_hint"
+      - pytest pco_python/test -v
 
 about:
   homepage: https://github.com/pcodec/pcodec
